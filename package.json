@@ -1,8 +1,11 @@
 {
   "name": "mi-branding-lms",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Paquete de branding personalizado para MFEs",
   "main": "index.js",
+  "dependencies": {
+    "@edx/brand-openedx": "latest"
+  },
   "peerDependencies": {
     "react": "^16.14.0 || ^17.0.0 || ^18.0.0",
     "react-dom": "^16.14.0 || ^17.0.0 || ^18.0.0",
