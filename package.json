@@ -4,7 +4,6 @@
   "description": "Paquete de branding personalizado para MFEs",
   "main": "dist/index.js",
   "dependencies": {
-    "@edx/brand-openedx": "latest",
     "@tailwindcss/cli": "^4.2.4",
     "tailwindcss": "^4.2.4"
   },
