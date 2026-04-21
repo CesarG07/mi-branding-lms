@@ -1,28 +1,18 @@
 import React from 'react';
+import '../dist/tailwind.css';
 
 const Footer = () => {
   return (
-    <div style={{ backgroundColor: '#1a1a1a', color: 'white', padding: '30px 20px', fontFamily: 'sans-serif' }}>
-      <div style={{ maxWidth: '1200px', margin: '0 auto', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-        
-        <div>
-          <h3 style={{ margin: '0 0 10px 0', color: '#4da6ff' }}>Mi Plataforma LMS</h3>
-          <p style={{ margin: 0, fontSize: '14px', color: '#ccc' }}>
-            Transformando la educación secundaria.
-          </p>
-        </div>
-
-        <div style={{ display: 'flex', gap: '20px' }}>
-          <a href="/about" style={{ color: 'white', textDecoration: 'none', fontSize: '14px' }}>Sobre Nosotros</a>
-          <a href="/privacy" style={{ color: 'white', textDecoration: 'none', fontSize: '14px' }}>Privacidad</a>
-          <a href="/support" style={{ color: 'white', textDecoration: 'none', fontSize: '14px' }}>Soporte</a>
-        </div>
-
+    <footer className="bg-brand-dark text-white py-8 text-center">
+      <div className="max-w-6xl mx-auto flex justify-between items-center px-4">
+        <h3 className="text-brand-blue font-bold text-xl">Mi LMS Moderno</h3>
+        <ul className="flex space-x-6">
+          <li><a href="/about" className="hover:text-blue-300 transition-colors">Nosotros</a></li>
+          <li><a href="/privacy" className="hover:text-blue-300 transition-colors">Privacidad</a></li>
+          <li><a href="/contact" className="hover:text-blue-300 transition-colors">Contacto</a></li>
+        </ul>
       </div>
-      <div style={{ textAlign: 'center', marginTop: '20px', borderTop: '1px solid #333', paddingTop: '10px', fontSize: '12px', color: '#888' }}>
-        &copy; {new Date().getFullYear()} Mi Institución. Todos los derechos reservados.
-      </div>
-    </div>
+    </footer>
   );
 };
 

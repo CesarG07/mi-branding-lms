@@ -4,7 +4,9 @@
   "description": "Paquete de branding personalizado para MFEs",
   "main": "index.js",
   "dependencies": {
-    "@edx/brand-openedx": "latest"
+    "@edx/brand-openedx": "latest",
+    "@tailwindcss/cli": "^4.2.4",
+    "tailwindcss": "^4.2.4"
   },
   "peerDependencies": {
     "react": "^16.14.0 || ^17.0.0 || ^18.0.0",
@@ -12,7 +14,8 @@
     "react-router-dom": "^5.2.0 || ^6.0.0"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:css": "npx @tailwindcss/cli -i ./src/index.css -o ./dist/tailwind.css"
   },
   "keywords": [],
   "author": "",
