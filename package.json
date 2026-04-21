@@ -2,7 +2,7 @@
   "name": "mi-branding-lms",
   "version": "1.0.1",
   "description": "Paquete de branding personalizado para MFEs",
-  "main": "index.js",
+  "main": "dist/index.js",
   "dependencies": {
     "@edx/brand-openedx": "latest",
     "@tailwindcss/cli": "^4.2.4",
@@ -20,5 +20,11 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs"
+  "type": "commonjs",
+  "devDependencies": {
+    "@babel/cli": "^7.28.6",
+    "@babel/core": "^7.29.0",
+    "@babel/preset-env": "^7.29.2",
+    "@babel/preset-react": "^7.28.5"
+  }
 }

@@ -1,5 +1,5 @@
 import React from 'react';
-import '../dist/tailwind.css';
+import './tailwind.css';
 
 const Footer = () => {
   return (
