@@ -13,7 +13,7 @@ var Footer = function Footer() {
   return /*#__PURE__*/(0, _jsxRuntime.jsxs)("footer", {
     className: "bg-white text-gray-700",
     children: [/*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
-      className: "max-w-6xl mx-auto px-4 py-6 flex items-center justify-between",
+      className: "mx-auto px-2 py-1 flex items-center justify-between",
       children: [/*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
         className: "flex items-center space-x-3",
         children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("span", {
