@@ -5,7 +5,7 @@ import logo from './logo.png';
 const Footer = () => {
   return (
     <footer className="bg-white text-gray-700">
-      <div className="mx-auto px-2 py-1 flex items-center justify-between">
+      <div className="px-4 py-4 flex items-center justify-between">
         <div className="flex items-center space-x-3">
           <span className="text-sm text-gray-500">Impulsado por</span>
           <img src={logo} alt="Logo" className="h-8 object-contain" />
