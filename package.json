@@ -3,6 +3,12 @@
   "version": "1.0.1",
   "description": "Paquete de branding personalizado para MFEs",
   "main": "dist/index.js",
+  "exports": {
+    ".": "./dist/index.js",
+    "./Header": "./dist/Header.js",
+    "./Footer": "./dist/Footer.js",
+    "./tailwind.css": "./dist/tailwind.css"
+  },
   "dependencies": {
     "@tailwindcss/cli": "^4.2.4",
     "tailwindcss": "^4.2.4"
@@ -15,7 +21,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build:css": "npx @tailwindcss/cli -i ./src/index.css -o ./dist/tailwind.css",
-    "build": "npx @tailwindcss/cli -i ./src/index.css -o ./dist/tailwind.css && npx babel src --out-dir dist --copy-files"
+    "build": "npx @tailwindcss/cli -i ./src/index.css -o ./dist/tailwind.css && npx babel src --out-dir dist --extensions \".js,.jsx\" --copy-files"
   },
   "keywords": [],
   "author": "",
